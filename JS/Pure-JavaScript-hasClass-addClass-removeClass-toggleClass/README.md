@@ -1,0 +1,1 @@
+###jQuery Style functions in Pure JavaScript: hasClass, addClass, removeClass, toggleClass.
