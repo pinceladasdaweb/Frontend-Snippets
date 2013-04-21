@@ -1,1 +1,1 @@
-###jQuery 2.0 dropped support to IE 6/7/8 versions. This script check the IE version and serve a old version for old IE's.
+###jQuery 2.0 dropped support to IE 6/7/8 versions. This script check the IE version and serve a old version of jQuery for old IE's.
