@@ -1,0 +1,1 @@
+###Example of how to create responsive iframes, this technique was originally listed [here](http://alistapart.com/article/creating-intrinsic-ratios-for-video).
