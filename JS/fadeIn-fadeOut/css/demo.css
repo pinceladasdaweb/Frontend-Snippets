@@ -1,0 +1,92 @@
+/*
+	Todd Motto Labs
+	URL: www.toddmotto.com
+*/
+
+body {
+	background:#ECF0F1;
+}
+a,
+a:hover {
+	text-decoration:none;
+}
+ul,
+ol {
+	list-style:none;
+}
+.wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+.main {
+	width:100%;
+	margin:50px 0;
+	text-align:center;
+}
+.content {
+	text-align:left;
+	margin:25px 0;
+}
+.content-text {
+	margin:0 0 15px;
+}
+
+/*------------------------------------*\
+    Raw JavaScript fadeIn/fadeOut
+\*------------------------------------*/
+
+#fadein,
+#fadeout {
+	display:inline-block;
+	padding:10px 20px;
+	margin:10px 0 0;
+	border:0;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	background:#6250B9;
+	background-image:linear-gradient(bottom, #4D3D99 9%, #6250B9 100%);
+	background-image:-moz-linear-gradient(bottom, #4D3D99 9%, #6250B9 100%);
+	background-image:-webkit-linear-gradient(bottom, #4D3D99 9%, #6250B9 100%);
+	background-image:-ms-linear-gradient(bottom, #4D3D99 9%, #6250B9 100%);
+	box-shadow:inset 0 1px 2px rgba(0,0,0,0.8),0 1px 0 rgba(255,255,255,0.3);
+	-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.8),0 1px 0 rgba(255,255,255,0.3);
+	-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.8),0 1px 0 rgba(255,255,255,0.3);
+	color:#FFF;
+	text-shadow:0 1px 1px #512c85;
+}
+#fadein:hover,
+#fadeout:hover {
+	background:#6B5ACC;
+	background-image:linear-gradient(bottom, #5745AD 6%, #6B5ACC 53%);
+	background-image:-moz-linear-gradient(bottom, #5745AD 6%, #6B5ACC 53%);
+	background-image:-webkit-linear-gradient(bottom, #5745AD 6%, #6B5ACC 53%);
+	background-image:-ms-linear-gradient(bottom, #5745AD 6%, #6B5ACC 53%);
+	color:#FFF;
+	cursor:pointer;
+}
+#fadein:active,
+#fadeout:active {
+	background:#6250B9;
+	background-image:linear-gradient(bottom, #6B5ACC 9%, #5745AD 100%);
+	background-image:-moz-linear-gradient(bottom, #6B5ACC 9%, #5745AD 100%);
+	background-image:-webkit-linear-gradient(bottom, #6B5ACC 9%, #5745AD 100%);
+	background-image:-ms-linear-gradient(bottom, #6B5ACC 9%, #5745AD 100%);
+	box-shadow:inset 0 1px 4px rgba(0,0,0,0.8),0 1px 0 rgba(255,255,255,0.3);
+	-webkit-box-shadow:inset 0 1px 4px rgba(0,0,0,0.8),0 1px 0 rgba(255,255,255,0.3);
+	-moz-box-shadow:inset 0 1px 4px rgba(0,0,0,0.8),0 1px 0 rgba(255,255,255,0.3);
+}
+#fader {
+	position:absolute;
+	left:50%;
+	top:80px;
+	margin:0 0 0 -100px;
+	height:200px;
+	width:200px;
+	background:#E74C3C;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}

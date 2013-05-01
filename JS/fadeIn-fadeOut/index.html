@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Raw JavaScript, jQuery-style fadeIn and fadeOut functions</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/demo.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main">
+				
+				<div id="fader" style="display:none;"></div>
+				
+				<p>Toggle the state of the box below using the buttons.</p>
+				<button id="fadein">fadeIn()</button>
+				<button id="fadeout">fadeOut()</button>
+				
+			</div>
+		</div>
+		
+		<script>
+		(function(){
+		
+			// jQuery-style fading
+			function fade(type, el, duration, IEsupport) {
+				var isIn     = (type == 'in'),
+					IE       = (IEsupport) ? IEsupport : false,
+					opacity  = isIn ? 0 : 1,
+					interval = 50,
+					gap      = interval / duration;
+					
+				if(isIn) {
+					el.style.display = 'block';
+					el.style.opacity = opacity;
+					if(IE) {
+						el.style.filter = 'alpha(opacity=' + opacity + ')';
+						el.style.filter = 'progid:DXImageTransform.Microsoft.Alpha(Opacity=' + opacity + ')';
+					}
+				}
+				
+				function func() {
+					opacity = isIn ? opacity + gap : opacity - gap; 
+					el.style.opacity = opacity;
+					if(IE) {
+						el.style.filter = 'alpha(opacity=' + opacity * 100 + ')';
+						el.style.filter = 'progid:DXImageTransform.Microsoft.Alpha(Opacity=' + opacity * 100 + ')';
+					}
+					if(opacity <= 0 || opacity >= 1) { window.clearInterval(fading); }
+					if(opacity <= 0) { el.style.display = "none"; }
+				}
+				var fading = window.setInterval(func, interval);
+			}
+			
+			/*** Usage ***/
+			
+			// Grab the elements
+			var fader = document.getElementById('fader');
+			var fadeInButton = document.getElementById('fadein');
+			var fadeOutButton = document.getElementById('fadeout');
+			
+			// Check element existance to prevent errors
+			if(fader && fadeInButton && fadeOutButton) {
+			
+				// fadeIn onclick handlers
+				fadeInButton.onclick = function(e) {
+					fade('in', fader, 750, true);
+				}
+				
+				// fadeIn onclick handlers
+				fadeOutButton.onclick = function(e) {
+					fade('out', fader, 750, true);
+				}
+			}
+			
+		})();
+		</script>
+	</body>
+</html>
