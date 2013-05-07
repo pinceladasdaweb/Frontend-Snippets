@@ -1,4 +1,4 @@
-[JavaScript Debounce Method](tech.pro/tutorial/1254/9-ways-to-optimize-your-front-end-performance)
+[JavaScript Debounce Method](http://tech.pro/tutorial/1254/9-ways-to-optimize-your-front-end-performance)
 =================
 
 ```javascript
