@@ -1,4 +1,4 @@
-[Event Delegation](tech.pro/tutorial/1254/9-ways-to-optimize-your-front-end-performance)
+[Event Delegation](http://tech.pro/tutorial/1254/9-ways-to-optimize-your-front-end-performance)
 =================
 
 ```javascript

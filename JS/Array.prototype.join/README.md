@@ -1,4 +1,4 @@
-[Use Array.prototype.join](tech.pro/tutorial/1254/9-ways-to-optimize-your-front-end-performance)
+[Use Array.prototype.join](http://tech.pro/tutorial/1254/9-ways-to-optimize-your-front-end-performance)
 =================
 
 One micro-optimization on the client side is using Array.prototype.join instead of basic string concatenation.
