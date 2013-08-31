@@ -8,7 +8,7 @@ var items = [];
 
 ajaxResult.items.forEach(function(item) {
     // Build the string
-    items.push(['<li>', item.text, '</li>'].join(''));
+    items.push('<li>', item.text, '</li>');
 });
 
 // Set list items via innerHTML
