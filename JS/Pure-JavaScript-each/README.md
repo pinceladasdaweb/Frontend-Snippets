@@ -8,9 +8,9 @@ Object.prototype.each = function (callback) {
 }
 ```
 
-/**
-* Example of usage:
-*/
+
+Example of usage:
+
 ```javascript
 var lis = document.querySelectorAll('li');
 
